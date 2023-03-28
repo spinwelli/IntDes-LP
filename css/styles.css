@@ -1,0 +1,406 @@
+:root {
+    --primary: #c700a9;
+    --secondary: #c7c7c7;
+    --text-color: white;
+    --text-secondary: #000000;
+    --text-tertiary: #4e4a4a;
+}
+
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event Form */
+
+#event-description {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+    url(../img/hrz-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+#disclaimer h2 {
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+.bi-calendar-date {
+    font-size: 30px;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    border-radius: 10px;
+    padding: 6px 6px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.btn:hover {
+    transition: 600ms;
+    opacity: 1;
+}
+
+/* Section of benefits */
+
+#key-benefits h2 {
+    background-color:  var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color:var(--text-tertiary);
+    margin-top: 5em;
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.smt-cool {
+    margin-top: 16.5em;
+}
+
+#benefit-1 {
+    background-image: url(../img/sqr-1.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/sqr-2.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/sqr-3.jpg);
+}
+
+/* Location section */
+
+#location {
+    color: var(--text-color);
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)),
+    url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+#address, 
+#about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;   
+}
+
+#address i{
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3{
+    font-size: 2.5em;
+    color: var(--primary);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+/* Event details container*/
+
+#details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+}
+
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: 0.5em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/* Call to action */
+
+#cta {
+    color: var(--text-color);
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)),
+    url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cta h3 {
+    margin-bottom: 3em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    color: rgb(99, 97, 97);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em ;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+        /* Responsive */
+
+ @media (max-width: 450px) {
+    /* Event Form      */
+    
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: .5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits Section */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Event Location */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+     }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    /* Event Details Container */
+    .detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-2 img {
+        order: 1;
+    }
+
+    /*Call to Action */
+    #cta h3 {
+        text-align: center;
+    }
+
+    #cta .btn {
+        width: 40%;
+    }
+
+    .btn {
+        opacity: 1;
+    }
+ }
+ 
